@@ -1,0 +1,19 @@
+<div style="max-width: 400px; margin: 30px auto; padding: 25px; border: 2px solid #29b6f6; border-radius: 15px; text-align: center; font-family: 'Nunito', sans-serif; background-color: #e1f5fe; box-shadow: 0 4px 15px rgba(41, 182, 246, 0.2);">
+  
+  <h2 style="color: #0288d1; margin-top: 0;">🔐 Prijava na nalog</h2>
+  <p style="color: #555; font-size: 14px; margin-bottom: 20px;">Unesite Vaš email i lozinku za nastavak.</p>
+  
+  <div style="margin-bottom: 15px;">
+    <input type="email" [(ngModel)]="podaci.email" (keyup.enter)="prijaviSe()" autocomplete="off" placeholder="Email adresa" style="width: 100%; padding: 12px; box-sizing: border-box; border-radius: 8px; border: 1px solid #ddd; outline: none;" />
+  </div>
+
+  <div style="margin-bottom: 25px;">
+    <input type="password" [(ngModel)]="podaci.lozinka" (keyup.enter)="prijaviSe()" autocomplete="new-password" placeholder="Lozinka" style="width: 100%; padding: 12px; box-sizing: border-box; border-radius: 8px; border: 1px solid #ddd; outline: none;" />
+  </div>
+
+  <button (click)="prijaviSe()" style="width: 100%; padding: 14px; background-color: #03a9f4; color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; font-weight: bold; transition: 0.3s; box-shadow: 0 4px 10px rgba(3, 169, 244, 0.3);">
+    Uđi u Pet Shop 🐾
+  </button>
+
+  <p style="color: #e53935; margin-top: 15px; font-weight: bold;">{{ poruka }}</p>
+</div>
